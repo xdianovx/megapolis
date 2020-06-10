@@ -1,0 +1,57 @@
+@media screen and (min-width: 100px) {
+  .info {
+    background-color: #191919;
+    margin-bottom: -1px;
+    &__wrap {
+      padding: 35px 0;
+    }
+
+    &__left {
+
+    }
+
+    &__right {
+      a {
+        font-size: 18px;
+        line-height: 208.7%;
+        font-weight: 700;
+        display: block;
+        color: #FFFFFF;
+
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF;
+      }
+
+    }
+
+  }
+
+  .copyright {
+    font-size: 12px;
+    line-height: 139.69%;
+    text-align: center;
+    color: #858585;
+    margin-top: 19px;
+    padding-bottom:  27px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}

@@ -1,0 +1,47 @@
+@media screen and (min-width: 100px) {
+  .footer {
+    background-color: #191919;
+    &__wrap {
+
+    }
+
+    &__left {
+      a  {
+        background: #292929;
+        border-radius: 6px;
+        padding: 8px;
+        margin-right: 9px;
+        transition: all .3s ease-in-out;
+        &:hover {
+          background: #EFEFF1;
+        }
+        img {
+          height: 20px;
+        }
+      }
+    }
+
+    &__right {
+
+
+    }
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .footer__wrap {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}

@@ -1,0 +1,53 @@
+
+
+.services-slider {
+
+}
+
+.services-slide {
+
+  p {
+    margin-left: 15px;
+    font-size: 14px;
+    line-height: 119.7%;
+    color: #000000;
+    opacity: 0.6;
+  }
+}
+
+.services-slide-active {
+  background-color: $yellow;
+  font-weight: 700;
+
+  p {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 100px) {
+  .services {
+    height: 53px;
+    margin-top: 23px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+  .services {
+    height: 83px;
+    margin-top: 23px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+

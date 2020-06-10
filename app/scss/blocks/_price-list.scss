@@ -1,0 +1,273 @@
+
+
+
+
+price-list {
+  margin-top: 60px;
+}
+
+
+
+
+.card {
+  border: none;
+}
+
+.card__button {
+  padding: 7px 0 9px 35px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.card-header-arr {
+  position: absolute;
+  top: 28px;
+  right: 49px;
+}
+
+.card-body {
+  padding: 0;
+
+}
+
+.table__row {
+  &:nth-child(even) {
+    background: #F9F9FC;
+  }
+}
+
+@media (min-width: 0px) {
+  .card-header[aria-expanded="true"] {
+    border: none;
+    transition: all .3s ease;
+    background-color: $yellow;
+
+  }
+
+  .card-header[aria-expanded="false"]{
+    border-bottom: none;
+    transition: all .3s ease;
+  }
+  .accordion .card-header button[aria-expanded="true"]:before {
+    position: absolute;
+    transition: all .3s ease;
+    content: '';
+    z-index: 1;
+    top: 27px;
+    right: 40px;
+    background-image: url("../img/accordition-arr.svg");
+    width: 16px;
+    height: 11px;
+  }
+  .accordion .card-header button[aria-expanded="false"]:before {
+    position: absolute;
+    transition: all .3s ease;
+    content: '';
+    z-index: 1;
+    background-image: url("../img/accordition-arr.svg");
+    transform: rotate(-180deg);
+    top: 27px;
+    right: 40px;
+    width: 16px;
+    height: 11px;
+  }
+  .table__row {
+    padding: 10px 15px;
+
+
+    &_title {
+
+      font-size: 16px;
+    }
+
+    &_price {
+      font-size: 18px;
+      line-height: 125.75%;
+      color: #262626;
+      font-weight: 700;
+    }
+
+    &_link {
+      padding-right: 0;
+
+
+      a {
+        color: #000;
+        text-decoration-line: underline;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 125.75%;
+        opacity: 0.6;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    &_image {
+      a {
+        position: relative;
+        top: -20px;
+        right: 15px;
+
+        &:before {
+          z-index: 2;
+          content: '';
+          position: absolute;
+          background-image: url("../img/cart-add-plus.svg");
+          width: 15px;
+          height: 15px;
+          bottom: -11px;
+          right: -1px;
+          opacity: .6;
+        }
+
+
+      }
+
+      a > img {
+        opacity: .5;
+        transition: all .3s ease;
+
+        border-radius: 50%;
+        position: relative;
+
+        &:hover {
+          opacity: 1;
+          box-shadow: 0px 0px 30px #F8EE1E;
+        }
+
+      }
+
+    }
+  }
+  .price-list__right {
+    position: static;
+    margin-top: 25px;
+  }
+
+  .price-list__left {
+    h4 {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 125.75%;
+      padding-top: 27px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 146.19%;
+      color: #000000;
+      padding-top: 40px;
+      text-align: center;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: calc(50% - 17px);
+        top: 20px;
+        height: 3px;
+        width: 34px;
+        background-color: $yellow;
+      }
+
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 32px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+
+  .table__row {
+    padding: 8px 36px 8px 56px;
+
+    &_image {
+      a {
+        top: auto;
+        right: auto;
+      }
+    }
+
+    &_title {
+      font-weight: 700;
+    }
+  }
+
+  .price-list__left {
+    margin-top: 0px;
+
+    h4 {
+      padding-top: 0;
+    }
+
+    a {
+      margin-top: 39px;
+      width: auto;
+    }
+
+    p {
+      text-align: left;
+      &:before {
+        left: 0;
+      }
+    }
+  }
+
+  .price-list__wrap {
+    position: relative;
+    padding: 50px 3px 42px 39px;
+  }
+
+  .price-list__right-l {
+    right: auto;
+    left: 20px;
+  }
+
+  .price-list__right {
+    margin-top: 0;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .price-list__right {
+    right: 33px;
+    z-index: -1;
+  }
+
+  .price-list__wrap {
+    border: 1px solid #F1F1F4;
+    margin: 27px -15px 0;
+  }
+
+  .accordion {
+    background: #F9F9FC;
+
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+
+  .price-list__wrap {
+    margin: 27px 55px 0;
+
+  }
+
+
+  .accordion {
+    margin: 0 70px;
+  }
+
+}

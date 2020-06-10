@@ -1,0 +1,85 @@
+
+@media screen and (min-width: 100px) {
+
+  select {
+    border: none;
+    height: 45px;
+  }
+  .modal-header {
+    button {
+      right: 15px;
+      top: 9px;
+    }
+    img {
+      margin-right: 36px;
+    }
+  }
+
+  .modal__form {
+    p {
+      font-size: 12px;
+      line-height: 139%;
+      text-align: center;
+      color: #606060;
+      margin-top: 11px;
+    }
+
+    a {
+      text-decoration: underline;
+      color: #000;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+ .input-muted {
+   background: #F9F9FC;
+   border-radius: 4px;
+   margin-bottom: 11px;
+   width: 100%;
+   font-size: 14px;
+   line-height: 19px;
+   color: #626262;
+   padding-left: 17px;
+ }
+
+
+
+  .modal-body {
+    h3 {
+      font-weight: 700;
+      margin-bottom: 4px;
+      font-size: 18px;
+      line-height: 25px;
+      color: #2C2C2C;
+    }
+
+    p {
+      margin-bottom: 25px;
+      font-size: 12px;
+      line-height: 139%;
+      text-align: center;
+      color: #606060;
+    }
+  }
+
+}
+
+@media screen and (min-width: 540px) {
+
+}
+
+@media screen and (min-width: 768px) {
+  .modal__window {
+    width: 390px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}

@@ -1,0 +1,21 @@
+.backlink {
+
+  margin-top: 120px;
+  a {
+    position: relative;
+    font-size: 14px;
+    line-height: 125.75%;
+    color: #8D8D8D;
+    padding-left: 20px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: 3px;
+      left: 0;
+      width: 10px;
+      height: 13px;
+      background-image: url("../img/backlink-arrow.svg");
+    }
+  }
+}

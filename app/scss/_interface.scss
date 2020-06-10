@@ -1,0 +1,124 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+}
+
+input {
+    box-sizing: border-box;
+    height: 45px;
+    padding: 13px 48px;
+    font-size: 16px;
+    line-height: 133.7%;
+    color: #000000;
+    border: none;
+}
+
+input:focus,
+input:hover {
+    outline: none;
+}
+
+select:focus,
+select:hover {
+    outline: none;
+}
+
+option:focus,
+option:hover {
+    outline: none;
+    border: none;
+}
+hr {
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+a:hover {
+    text-decoration: none;
+    color: #333333;
+}
+
+
+h3 {
+    font-size: 28px;
+    line-height: 38px;
+    color: #262626;
+    font-weight: 700;
+}
+
+button:focus,
+button:hover {
+    outline: none;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.button {
+    background-color: $yellow;
+    padding: 14px 35px 15px 34px;
+    text-transform: uppercase;
+    color: #272727;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all .3s ease;
+    &:hover {
+        box-shadow: 0px 5px 30px $yellow;
+    }
+}
+
+.divider {
+    width: 1px;
+    height: 20px;
+    background-color: #c5c5c5;
+}
+@media screen and  (min-width: 100px) {
+    h2 {
+        font-size: 27px;
+    }
+
+
+}
+
+@media screen and  (min-width: 540px) {
+
+}
+
+@media screen and  (min-width: 768px) {
+    h2 {
+        font-size: 36px;
+    }
+}
+
+@media screen and  (min-width: 992px) {
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+
+}
