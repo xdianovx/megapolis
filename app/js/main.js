@@ -114,12 +114,12 @@ if (window.innerWidth >= 1024) {
 
 
 const productCards = document.querySelectorAll('.cart__wrap');
+console.log(productCards.Array);
 
-productCards.forEach(function(card, index) {
+productCards.forEach(function (card, index) {
     let productPrice = document.querySelector('.cart__count_item-count').getAttribute('data-price');
     console.log(productPrice);
 });
-
 
 
 let plusBtns = document.querySelectorAll('.cartPlus');
@@ -143,9 +143,3 @@ minusBtns.forEach((minusBtn) => {
     })
 });
 
-
-let productCountValue = document.querySelector('.cart__count_item-count').value;
-let productCount = document.querySelector('.cart__count_item-count');
-let productPrice = document.querySelector('.cart__count_item-count').getAttribute('data-price');
-let productTotalCost = document.querySelector('.cart__item_price');
-let cartTotalCost = document.querySelector('.cart__total_cost');

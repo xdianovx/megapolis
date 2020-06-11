@@ -1,7 +1,11 @@
 @media screen and (min-width: 100px) {
   .info {
-    background-color: #191919;
+    background-color: #ffffff;
     margin-bottom: -1px;
+
+    img {
+      margin-top: 25px;
+    }
     &__wrap {
       padding: 35px 0;
     }
@@ -16,14 +20,14 @@
         line-height: 208.7%;
         font-weight: 700;
         display: block;
-        color: #FFFFFF;
+        color: #191919;
 
       }
 
       p {
         font-size: 14px;
         line-height: 19px;
-        color: #FFFFFF;
+        color: #191919;
       }
 
     }
@@ -45,7 +49,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .info {
+    background-color: #ffffff;
+    margin-bottom: -1px;
 
+    img {
+      margin-top: 0px;
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {

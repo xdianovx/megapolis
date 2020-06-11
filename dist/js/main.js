@@ -1,9 +1,9 @@
 //Phone mask
-$(document).ready(function() {
+$(document).ready(function () {
     $('.form-phone').mask("+7 (999) 99 99 99");
 });
 
-$(function(){
+$(function () {
     var navMain = $(".navbar-collapse");
     navMain.on("click", "a:not([data-toggle])", null, function () {
         navMain.collapse('hide');
@@ -111,4 +111,35 @@ if (window.innerWidth >= 1024) {
 
     });
 }
+
+
+const productCards = document.querySelectorAll('.cart__wrap');
+console.log(productCards.Array);
+
+productCards.forEach(function (card, index) {
+    let productPrice = document.querySelector('.cart__count_item-count').getAttribute('data-price');
+    console.log(productPrice);
+});
+
+
+let plusBtns = document.querySelectorAll('.cartPlus');
+let minusBtns = document.querySelectorAll('.cartMin');
+
+// console.log(productCountValues);
+
+
+plusBtns.forEach((plusBtn) => {
+    plusBtn.addEventListener('click', () => {
+        productCount.value = ++productCountValue;
+        productTotalCost.innerHTML = productCountValue * productPrice;
+    })
+});
+
+
+minusBtns.forEach((minusBtn) => {
+    minusBtn.addEventListener('click', () => {
+        productCount.value = --productCountValue;
+        productTotalCost.innerHTML = productCountValue * productPrice;
+    })
+});
 
