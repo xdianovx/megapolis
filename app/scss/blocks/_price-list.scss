@@ -1,14 +1,5 @@
 
 
-
-
-price-list {
-  margin-top: 60px;
-}
-
-
-
-
 .card {
   border: none;
 }
@@ -224,6 +215,11 @@ price-list {
   .price-list__wrap {
     position: relative;
     padding: 50px 3px 42px 39px;
+
+    img {
+      object-fit: none
+    ;
+    }
   }
 
   .price-list__right-l {

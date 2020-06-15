@@ -23,11 +23,15 @@ header {
   }
 
   &:before {
-    top: 0;
+    top: 4px;
+    transform: rotate(-45deg);
+    transition: all .3s ease;
   }
 
   &:after {
-    bottom: 0;
+    bottom: 10px;
+    transform: rotate(45deg);
+    transition: all .3s ease;
   }
 
   span {
@@ -38,9 +42,28 @@ header {
       height: 2px;
       background-color: #333;
       left: 0;
-      top: 7px;
+      top: 0px;
+      transform: rotateY(90deg);
+      transition: all .3s ease;
     }
   }
+
+
+}
+
+.navbar-toggler,.collapsed:before {
+    top: -4px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler,.collapsed:after {
+  bottom: 4px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler, .collapsed span:before {
+  top: 3px;
+  transform: rotateY(0deg);
 }
 
 
@@ -81,16 +104,17 @@ header {
   }
 
   .nav-link {
-      color: #191919;
+    color: #191919;
     transition: all .3s ease;
-      &:hover {
-        color: #ababab;
-      }
 
-      &:focus {
-        color: #ababab;
-      }
+    &:hover {
+      color: #ababab;
     }
+
+    &:focus {
+      color: #ababab;
+    }
+  }
 
 
   .header__phone-mob {
@@ -119,6 +143,7 @@ header {
     margin-bottom: 32px;
     margin-top: 64px;
     position: relative;
+
     img {
       width: 30px;
 
@@ -132,13 +157,9 @@ header {
       line-height: 16px;
       color: #FFFFFF;
       position: absolute;
-      width: 21px;
-      height: 21px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      padding: 3px 8px;
       background: #262626;
-      border-radius: 50%;
+      border-radius: 10px;
       box-sizing: border-box;
     }
   }
@@ -161,14 +182,15 @@ header {
     height: 30px;
     margin-bottom: 0;
     margin-top: 0;
+
     img {
       width: auto;
     }
 
     &_badge {
-      width: 15px;
-      height: 15px;
+      padding: 0 5px;
       font-size: 10px;
+      line-height: 15px;
     }
   }
   .header__right {

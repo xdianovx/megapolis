@@ -24,9 +24,47 @@ input:hover {
     outline: none;
 }
 
+.select {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 11px;
+        right: 18px;
+        width: 15px;
+        height: 14px;
+        background-image: url("../img/select.svg");
+    }
+}
+
+
+select {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 select:focus,
 select:hover {
     outline: none;
+}
+
+
+option {
+    padding: 20px 5px;
+}
+
+option:focus,
+option:hover{
+    outline: none;
+    background-color: #F9F9FC;
+}
+
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
 }
 
 option:focus,
